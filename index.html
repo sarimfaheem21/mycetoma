@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --sand: #f5f0e8;
       --parchment: #ede6d6;
@@ -20,9 +20,9 @@
       --border: rgba(26,22,18,0.12);
       --border-strong: rgba(26,22,18,0.25);
     }
-
+ 
     html { scroll-behavior: smooth; }
-
+ 
     body {
       background: var(--sand);
       color: var(--ink);
@@ -31,7 +31,7 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-
+ 
     /* ── NAV ── */
     nav {
       position: fixed;
@@ -45,7 +45,7 @@
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
-
+ 
     .nav-logo {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -54,13 +54,13 @@
       text-transform: uppercase;
       color: var(--rust);
     }
-
+ 
     .nav-links {
       display: flex;
       gap: 2.5rem;
       list-style: none;
     }
-
+ 
     .nav-links a {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -70,9 +70,9 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-
+ 
     .nav-links a:hover { color: var(--rust); }
-
+ 
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
@@ -82,7 +82,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     .hero::before {
       content: '';
       position: absolute;
@@ -92,14 +92,14 @@
         radial-gradient(ellipse 40% 60% at 20% 80%, rgba(107,107,58,0.06) 0%, transparent 60%);
       pointer-events: none;
     }
-
+ 
     .hero-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 5rem 3rem 5rem 5rem;
     }
-
+ 
     .hero-eyebrow {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -111,7 +111,7 @@
       align-items: center;
       gap: 0.8rem;
     }
-
+ 
     .hero-eyebrow::before {
       content: '';
       display: block;
@@ -119,7 +119,7 @@
       height: 1px;
       background: var(--rust);
     }
-
+ 
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(3.5rem, 6vw, 5.5rem);
@@ -129,12 +129,12 @@
       margin-bottom: 2rem;
       color: var(--ink);
     }
-
+ 
     .hero-title em {
       font-style: italic;
       color: var(--rust);
     }
-
+ 
     .hero-body {
       font-size: 1.1rem;
       color: var(--muted);
@@ -142,19 +142,19 @@
       line-height: 1.8;
       margin-bottom: 2.5rem;
     }
-
+ 
     .hero-stats {
       display: flex;
       gap: 2.5rem;
       margin-top: 1rem;
     }
-
+ 
     .stat {
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
     }
-
+ 
     .stat-num {
       font-family: 'Syne', sans-serif;
       font-size: 2rem;
@@ -162,7 +162,7 @@
       color: var(--rust);
       line-height: 1;
     }
-
+ 
     .stat-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -170,7 +170,7 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-
+ 
     .hero-visual {
       display: flex;
       align-items: center;
@@ -178,7 +178,7 @@
       padding: 4rem 4rem 4rem 2rem;
       position: relative;
     }
-
+ 
     .hero-card {
       background: var(--parchment);
       border: 1px solid var(--border-strong);
@@ -188,7 +188,7 @@
       max-width: 380px;
       position: relative;
     }
-
+ 
     .hero-card::before {
       content: 'NEGLECTED TROPICAL DISEASE';
       font-family: 'DM Mono', monospace;
@@ -200,7 +200,7 @@
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--border);
     }
-
+ 
     .hero-card-title {
       font-family: 'Syne', sans-serif;
       font-size: 0.8rem;
@@ -209,20 +209,20 @@
       margin-bottom: 0.8rem;
       color: var(--ink);
     }
-
+ 
     .hero-card p {
       font-size: 0.95rem;
       color: var(--muted);
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
-
+ 
     .tag-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
     }
-
+ 
     .tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
@@ -233,20 +233,20 @@
       color: var(--muted);
       border-radius: 1px;
     }
-
+ 
     .tag.accent {
       background: var(--rust);
       color: white;
       border-color: var(--rust);
     }
-
+ 
     /* ── SECTION SHARED ── */
     section {
       padding: 7rem 5rem;
       max-width: 1300px;
       margin: 0 auto;
     }
-
+ 
     .section-header {
       display: flex;
       align-items: flex-end;
@@ -255,7 +255,7 @@
       padding-bottom: 1.5rem;
       border-bottom: 1px solid var(--border);
     }
-
+ 
     .section-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
@@ -264,7 +264,7 @@
       color: var(--rust);
       margin-bottom: 0.6rem;
     }
-
+ 
     .section-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(2rem, 3.5vw, 3rem);
@@ -272,9 +272,9 @@
       line-height: 1.1;
       color: var(--ink);
     }
-
+ 
     .section-title em { font-style: italic; color: var(--rust); }
-
+ 
     .section-count {
       font-family: 'Syne', sans-serif;
       font-size: 5rem;
@@ -284,7 +284,7 @@
       line-height: 1;
       user-select: none;
     }
-
+ 
     /* ── DIVIDER ── */
     .full-divider {
       width: 100%;
@@ -292,22 +292,25 @@
       background: var(--border);
       margin: 0;
     }
-
+ 
     /* ── TIMELINE ── */
     #timeline { padding-top: 6rem; padding-bottom: 6rem; }
-
+ 
     .timeline-intro {
       font-size: 1.05rem;
       color: var(--muted);
       max-width: 55ch;
       margin-bottom: 4rem;
+      position: relative;
+      z-index: 0;
     }
-
+ 
     .timeline-track {
       position: relative;
       padding: 2rem 0;
+      z-index: 1;
     }
-
+ 
     /* Horizontal line */
     .timeline-track::before {
       content: '';
@@ -318,7 +321,7 @@
       height: 1px;
       background: linear-gradient(to right, transparent, var(--border-strong) 5%, var(--border-strong) 95%, transparent);
     }
-
+ 
     .timeline-years {
       display: flex;
       gap: 0;
@@ -326,9 +329,9 @@
       padding-bottom: 1rem;
       scrollbar-width: none;
     }
-
+ 
     .timeline-years::-webkit-scrollbar { display: none; }
-
+ 
     .year-node {
       flex: 1;
       min-width: 100px;
@@ -338,7 +341,7 @@
       cursor: pointer;
       position: relative;
     }
-
+ 
     .year-dot {
       width: 12px;
       height: 12px;
@@ -350,7 +353,7 @@
       z-index: 2;
       margin-bottom: 0.6rem;
     }
-
+ 
     .year-node:hover .year-dot,
     .year-node.active .year-dot {
       background: var(--rust);
@@ -358,7 +361,7 @@
       transform: scale(1.4);
       box-shadow: 0 0 0 4px rgba(181,67,26,0.15);
     }
-
+ 
     .year-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -366,13 +369,13 @@
       letter-spacing: 0.05em;
       transition: color 0.3s;
     }
-
+ 
     .year-node:hover .year-label,
     .year-node.active .year-label {
       color: var(--rust);
       font-weight: 500;
     }
-
+ 
     .year-has-content::after {
       content: '';
       position: absolute;
@@ -384,7 +387,7 @@
       border-radius: 50%;
       opacity: 0.6;
     }
-
+ 
     /* Panel */
     .timeline-panel {
       margin-top: 2.5rem;
@@ -395,28 +398,28 @@
       display: none;
       animation: panelIn 0.35s ease forwards;
     }
-
+ 
     .timeline-panel.open { display: grid; grid-template-columns: 280px 1fr; }
-
+ 
     @keyframes panelIn {
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
+ 
     .panel-image {
       background: var(--ink);
       min-height: 260px;
       position: relative;
       overflow: hidden;
     }
-
+ 
     .panel-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       opacity: 0.75;
     }
-
+ 
     .panel-image-placeholder {
       width: 100%;
       height: 100%;
@@ -426,7 +429,7 @@
       align-items: center;
       justify-content: center;
     }
-
+ 
     .panel-image-placeholder span {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -434,14 +437,14 @@
       color: rgba(245,240,232,0.3);
       text-transform: uppercase;
     }
-
+ 
     .panel-content {
       padding: 2rem 2.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-
+ 
     .panel-year-tag {
       font-family: 'Syne', sans-serif;
       font-size: 3rem;
@@ -452,7 +455,7 @@
       margin-bottom: 1rem;
       user-select: none;
     }
-
+ 
     .panel-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.6rem;
@@ -461,14 +464,14 @@
       margin-bottom: 0.8rem;
       color: var(--ink);
     }
-
+ 
     .panel-body {
       font-size: 0.95rem;
       color: var(--muted);
       line-height: 1.75;
       margin-bottom: 1.5rem;
     }
-
+ 
     .panel-meta {
       display: flex;
       gap: 1rem;
@@ -476,7 +479,7 @@
       padding-top: 1rem;
       border-top: 1px solid var(--border);
     }
-
+ 
     .panel-tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
@@ -486,7 +489,7 @@
       border: 1px solid var(--border-strong);
       color: var(--muted);
     }
-
+ 
     .panel-close {
       position: absolute;
       top: 1rem;
@@ -501,15 +504,15 @@
       padding: 0.3rem 0.6rem;
       transition: color 0.2s;
     }
-
+ 
     .panel-close:hover { color: var(--rust); }
-
+ 
     .panel-wrapper { position: relative; }
-
+ 
     /* ── PARTNERSHIPS ── */
     #partnerships { background: var(--parchment); max-width: 100%; padding: 7rem 5rem; }
     #partnerships .inner { max-width: 1300px; margin: 0 auto; }
-
+ 
     .partners-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -518,7 +521,7 @@
       border: 1px solid var(--border);
       margin-bottom: 4rem;
     }
-
+ 
     .partner-card {
       background: var(--parchment);
       padding: 2rem 1.5rem;
@@ -527,9 +530,9 @@
       gap: 0.5rem;
       transition: background 0.2s;
     }
-
+ 
     .partner-card:hover { background: var(--sand); }
-
+ 
     .partner-name {
       font-family: 'Syne', sans-serif;
       font-size: 0.8rem;
@@ -537,7 +540,7 @@
       letter-spacing: 0.04em;
       color: var(--ink);
     }
-
+ 
     .partner-type {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -545,7 +548,7 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-
+ 
     .partner-dot {
       width: 6px;
       height: 6px;
@@ -553,7 +556,7 @@
       background: var(--rust);
       margin-bottom: 0.5rem;
     }
-
+ 
     /* CTA */
     .cta-block {
       display: grid;
@@ -564,22 +567,22 @@
       border: 1px solid var(--border-strong);
       background: var(--sand);
     }
-
+ 
     .cta-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 2rem;
       font-weight: 300;
       line-height: 1.2;
     }
-
+ 
     .cta-title em { font-style: italic; color: var(--rust); }
-
+ 
     .cta-sub {
       font-size: 0.95rem;
       color: var(--muted);
       margin-top: 0.5rem;
     }
-
+ 
     .btn-primary {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -595,9 +598,9 @@
       display: inline-block;
       white-space: nowrap;
     }
-
+ 
     .btn-primary:hover { background: var(--rust-light); }
-
+ 
     /* ── FOOTER ── */
     footer {
       padding: 2rem 5rem;
@@ -606,7 +609,7 @@
       align-items: center;
       justify-content: space-between;
     }
-
+ 
     .footer-logo {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -615,26 +618,26 @@
       text-transform: uppercase;
       color: var(--rust);
     }
-
+ 
     .footer-note {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
       letter-spacing: 0.08em;
       color: var(--muted);
     }
-
+ 
     /* ── SCROLL REVEAL ── */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
-
+ 
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
-
+ 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
@@ -653,7 +656,7 @@
   </style>
 </head>
 <body>
-
+ 
   <!-- NAV -->
   <nav>
     <span class="nav-logo">AGPHI</span>
@@ -663,7 +666,7 @@
       <li><a href="#partnerships">Partners</a></li>
     </ul>
   </nav>
-
+ 
   <!-- HERO -->
   <div class="hero" id="what">
     <div class="hero-text">
@@ -701,9 +704,9 @@
       </div>
     </div>
   </div>
-
+ 
   <div class="full-divider"></div>
-
+ 
   <!-- TIMELINE -->
   <section id="timeline">
     <div class="section-header">
@@ -713,17 +716,17 @@
       </div>
       <span class="section-count">02</span>
     </div>
-
+ 
     <p class="timeline-intro reveal">
       From early awareness efforts to active research partnerships, AGPHI has built a sustained presence in mycetoma advocacy, education, and intervention across a decade of work. Click any year to explore key milestones.
     </p>
-
+ 
     <div class="timeline-track reveal">
       <div class="timeline-years" id="timelineYears">
         <!-- Populated by JS -->
       </div>
     </div>
-
+ 
     <div class="panel-wrapper">
       <div class="timeline-panel" id="timelinePanel">
         <div class="panel-image">
@@ -741,9 +744,9 @@
       <button class="panel-close" id="panelClose" style="display:none;" onclick="closePanel()">✕ Close</button>
     </div>
   </section>
-
+ 
   <div class="full-divider"></div>
-
+ 
   <!-- PARTNERSHIPS -->
   <div id="partnerships">
     <div class="inner">
@@ -754,28 +757,28 @@
         </div>
         <span class="section-count">03</span>
       </div>
-
+ 
       <div class="partners-grid reveal">
         <!-- Populated by JS -->
       </div>
-
+ 
       <div class="cta-block reveal">
         <div>
           <div class="cta-title">Interested in working<br /><em>with us?</em></div>
           <p class="cta-sub">We welcome partnerships with researchers, clinicians, policymakers, and community organizations committed to addressing neglected tropical diseases.</p>
         </div>
-        <a href="mailto:agphi@nyu.edu" class="btn-primary">Get in Touch</a>
+        <a href="/cdn-cgi/l/email-protection#4e2f293e26270e20373b602b2a3b" class="btn-primary">Get in Touch</a>
       </div>
     </div>
   </div>
-
+ 
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">AGPHI × Mycetoma</span>
     <span class="footer-note">NYU School of Global Public Health — <span id="fyear"></span></span>
   </footer>
-
-  <script>
+ 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // ── DATA (placeholder — replace with real content) ──
     const timelineData = {
       2014: {
@@ -822,7 +825,7 @@
         tags: ["Strategy", "Review", "Impact"],
       },
     };
-
+ 
     const partnersData = [
       { name: "Mycetoma Research Centre", type: "Research Institution", loc: "Khartoum, Sudan" },
       { name: "WHO / NTD Department", type: "International Organization", loc: "Geneva" },
@@ -831,11 +834,11 @@
       { name: "CMMB Kenya", type: "Implementation Partner", loc: "Kenya" },
       { name: "Placeholder Partner", type: "TBD", loc: "—" },
     ];
-
+ 
     // ── BUILD TIMELINE ──
     const yearsContainer = document.getElementById('timelineYears');
     const years = Object.keys(timelineData).map(Number).sort();
-
+ 
     years.forEach(yr => {
       const hasContent = timelineData[yr] !== null;
       const node = document.createElement('div');
@@ -850,7 +853,7 @@
       }
       yearsContainer.appendChild(node);
     });
-
+ 
     // ── BUILD PARTNERS ──
     const grid = document.querySelector('.partners-grid');
     partnersData.forEach(p => {
@@ -864,52 +867,46 @@
       `;
       grid.appendChild(card);
     });
-
+ 
     // ── PANEL ──
     let activeNode = null;
-
+ 
     function openPanel(year, node) {
       const data = timelineData[year];
       if (!data) return;
-
+ 
       // Toggle
       if (activeNode === node) { closePanel(); return; }
-
+ 
       document.querySelectorAll('.year-node').forEach(n => n.classList.remove('active'));
       node.classList.add('active');
       activeNode = node;
-
+ 
       document.getElementById('panelYear').textContent = year;
       document.getElementById('panelTitle').textContent = data.title;
       document.getElementById('panelBody').textContent = data.body;
-
+ 
       const meta = document.getElementById('panelMeta');
       meta.innerHTML = data.tags.map(t => `<span class="panel-tag">${t}</span>`).join('');
-
+ 
       const panel = document.getElementById('timelinePanel');
       panel.classList.remove('open');
       void panel.offsetWidth; // reflow for re-animation
       panel.classList.add('open');
-
+ 
       document.getElementById('panelClose').style.display = 'block';
       setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
     }
-
+ 
     function closePanel() {
       document.getElementById('timelinePanel').classList.remove('open');
       document.getElementById('panelClose').style.display = 'none';
       if (activeNode) { activeNode.classList.remove('active'); activeNode = null; }
     }
-
+ 
     // ── SCROLL REVEAL ──
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
     }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // ── FOOTER YEAR ──
-    document.getElementById('fyear').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+ 
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(e
