@@ -14,8 +14,6 @@
       --ink: #1a1612;
       --rust: #b5431a;
       --rust-light: #d4612e;
-      --terracotta: #c8693a;
-      --olive: #6b6b3a;
       --muted: #7a6f62;
       --border: rgba(26,22,18,0.12);
       --border-strong: rgba(26,22,18,0.25);
@@ -32,7 +30,7 @@
       overflow-x: hidden;
     }
  
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -45,7 +43,6 @@
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
- 
     .nav-logo {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -54,13 +51,7 @@
       text-transform: uppercase;
       color: var(--rust);
     }
- 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
- 
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -70,10 +61,9 @@
       text-decoration: none;
       transition: color 0.2s;
     }
- 
     .nav-links a:hover { color: var(--rust); }
  
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: grid;
@@ -82,7 +72,6 @@
       position: relative;
       overflow: hidden;
     }
- 
     .hero::before {
       content: '';
       position: absolute;
@@ -92,14 +81,12 @@
         radial-gradient(ellipse 40% 60% at 20% 80%, rgba(107,107,58,0.06) 0%, transparent 60%);
       pointer-events: none;
     }
- 
     .hero-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 5rem 3rem 5rem 5rem;
     }
- 
     .hero-eyebrow {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -111,7 +98,6 @@
       align-items: center;
       gap: 0.8rem;
     }
- 
     .hero-eyebrow::before {
       content: '';
       display: block;
@@ -119,22 +105,14 @@
       height: 1px;
       background: var(--rust);
     }
- 
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(3.5rem, 6vw, 5.5rem);
       font-weight: 300;
       line-height: 1.05;
-      letter-spacing: -0.01em;
       margin-bottom: 2rem;
-      color: var(--ink);
     }
- 
-    .hero-title em {
-      font-style: italic;
-      color: var(--rust);
-    }
- 
+    .hero-title em { font-style: italic; color: var(--rust); }
     .hero-body {
       font-size: 1.1rem;
       color: var(--muted);
@@ -142,19 +120,8 @@
       line-height: 1.8;
       margin-bottom: 2.5rem;
     }
- 
-    .hero-stats {
-      display: flex;
-      gap: 2.5rem;
-      margin-top: 1rem;
-    }
- 
-    .stat {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
- 
+    .hero-stats { display: flex; gap: 2.5rem; margin-top: 1rem; }
+    .stat { display: flex; flex-direction: column; gap: 0.2rem; }
     .stat-num {
       font-family: 'Syne', sans-serif;
       font-size: 2rem;
@@ -162,7 +129,6 @@
       color: var(--rust);
       line-height: 1;
     }
- 
     .stat-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.65rem;
@@ -170,15 +136,12 @@
       text-transform: uppercase;
       color: var(--muted);
     }
- 
     .hero-visual {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 4rem 4rem 4rem 2rem;
-      position: relative;
     }
- 
     .hero-card {
       background: var(--parchment);
       border: 1px solid var(--border-strong);
@@ -186,9 +149,7 @@
       padding: 2.5rem;
       width: 100%;
       max-width: 380px;
-      position: relative;
     }
- 
     .hero-card::before {
       content: 'NEGLECTED TROPICAL DISEASE';
       font-family: 'DM Mono', monospace;
@@ -200,29 +161,20 @@
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--border);
     }
- 
     .hero-card-title {
       font-family: 'Syne', sans-serif;
       font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: 0.05em;
       margin-bottom: 0.8rem;
-      color: var(--ink);
     }
- 
     .hero-card p {
       font-size: 0.95rem;
       color: var(--muted);
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
- 
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
- 
+    .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .tag {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
@@ -233,20 +185,14 @@
       color: var(--muted);
       border-radius: 1px;
     }
+    .tag.accent { background: var(--rust); color: white; border-color: var(--rust); }
  
-    .tag.accent {
-      background: var(--rust);
-      color: white;
-      border-color: var(--rust);
-    }
- 
-    /* ── SECTION SHARED ── */
-    section {
+    /* SHARED */
+    .section-inner {
       padding: 7rem 5rem;
       max-width: 1300px;
       margin: 0 auto;
     }
- 
     .section-header {
       display: flex;
       align-items: flex-end;
@@ -255,7 +201,6 @@
       padding-bottom: 1.5rem;
       border-bottom: 1px solid var(--border);
     }
- 
     .section-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
@@ -264,17 +209,13 @@
       color: var(--rust);
       margin-bottom: 0.6rem;
     }
- 
     .section-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(2rem, 3.5vw, 3rem);
       font-weight: 300;
       line-height: 1.1;
-      color: var(--ink);
     }
- 
     .section-title em { font-style: italic; color: var(--rust); }
- 
     .section-count {
       font-family: 'Syne', sans-serif;
       font-size: 5rem;
@@ -285,37 +226,28 @@
       user-select: none;
     }
  
-    /* ── DIVIDER ── */
-    .full-divider {
-      width: 100%;
-      height: 1px;
-      background: var(--border);
-      margin: 0;
-    }
+    .full-divider { width: 100%; height: 1px; background: var(--border); }
  
-    /* ── TIMELINE ── */
-    #timeline { padding-top: 6rem; padding-bottom: 6rem; }
+    /* TIMELINE */
+    #timeline { background: var(--sand); }
  
     .timeline-intro {
       font-size: 1.05rem;
       color: var(--muted);
       max-width: 55ch;
-      margin-bottom: 4rem;
-      position: relative;
-      z-index: 0;
+      margin-bottom: 5rem;
     }
  
+    /* The key fix: track is a fresh stacking context, well below the intro */
     .timeline-track {
       position: relative;
-      padding: 2rem 0;
-      z-index: 1;
+      padding-top: 0.5rem;
+      margin-bottom: 2.5rem;
     }
  
-    /* Horizontal line */
-    .timeline-track::before {
-      content: '';
+    .timeline-line {
       position: absolute;
-      top: 2.6rem;
+      top: 6px; /* center of the 12px dot */
       left: 0;
       right: 0;
       height: 1px;
@@ -324,35 +256,39 @@
  
     .timeline-years {
       display: flex;
-      gap: 0;
       overflow-x: auto;
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
       scrollbar-width: none;
+      position: relative;
     }
- 
     .timeline-years::-webkit-scrollbar { display: none; }
  
     .year-node {
       flex: 1;
-      min-width: 100px;
+      min-width: 90px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      cursor: pointer;
+      cursor: default;
       position: relative;
     }
+ 
+    .year-node.year-has-content { cursor: pointer; }
  
     .year-dot {
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: var(--parchment);
+      background: var(--sand);
       border: 2px solid var(--border-strong);
       transition: all 0.3s ease;
       position: relative;
       z-index: 2;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.8rem;
+      flex-shrink: 0;
     }
+ 
+    .year-has-content .year-dot { border-color: var(--rust); }
  
     .year-node:hover .year-dot,
     .year-node.active .year-dot {
@@ -369,67 +305,35 @@
       letter-spacing: 0.05em;
       transition: color 0.3s;
     }
- 
-    .year-node:hover .year-label,
-    .year-node.active .year-label {
-      color: var(--rust);
-      font-weight: 500;
-    }
- 
-    .year-has-content::after {
-      content: '';
-      position: absolute;
-      top: -4px;
-      right: calc(50% - 14px);
-      width: 6px;
-      height: 6px;
-      background: var(--rust);
-      border-radius: 50%;
-      opacity: 0.6;
-    }
+    .year-node.active .year-label,
+    .year-has-content:hover .year-label { color: var(--rust); }
  
     /* Panel */
+    .panel-wrapper { position: relative; }
+ 
     .timeline-panel {
-      margin-top: 2.5rem;
       background: var(--parchment);
       border: 1px solid var(--border-strong);
-      border-radius: 2px;
       overflow: hidden;
       display: none;
+    }
+    .timeline-panel.open {
+      display: grid;
+      grid-template-columns: 280px 1fr;
       animation: panelIn 0.35s ease forwards;
     }
- 
-    .timeline-panel.open { display: grid; grid-template-columns: 280px 1fr; }
- 
     @keyframes panelIn {
-      from { opacity: 0; transform: translateY(12px); }
+      from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
     }
  
-    .panel-image {
-      background: var(--ink);
-      min-height: 260px;
-      position: relative;
-      overflow: hidden;
-    }
- 
-    .panel-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.75;
-    }
- 
     .panel-image-placeholder {
-      width: 100%;
-      height: 100%;
       min-height: 260px;
       background: linear-gradient(135deg, #2a221a 0%, #3d2e22 50%, #1a1612 100%);
       display: flex;
       align-items: center;
       justify-content: center;
     }
- 
     .panel-image-placeholder span {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -443,57 +347,11 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
     }
- 
-    .panel-year-tag {
-      font-family: 'Syne', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      color: transparent;
-      -webkit-text-stroke: 1px var(--border-strong);
-      line-height: 1;
-      margin-bottom: 1rem;
-      user-select: none;
-    }
- 
-    .panel-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 1.2;
-      margin-bottom: 0.8rem;
-      color: var(--ink);
-    }
- 
-    .panel-body {
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.75;
-      margin-bottom: 1.5rem;
-    }
- 
-    .panel-meta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-    }
- 
-    .panel-tag {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.6rem;
-      border: 1px solid var(--border-strong);
-      color: var(--muted);
-    }
- 
     .panel-close {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: 1rem; right: 1rem;
       background: none;
       border: none;
       cursor: pointer;
@@ -504,14 +362,50 @@
       padding: 0.3rem 0.6rem;
       transition: color 0.2s;
     }
- 
     .panel-close:hover { color: var(--rust); }
  
-    .panel-wrapper { position: relative; }
+    .panel-year-tag {
+      font-family: 'Syne', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--border-strong);
+      line-height: 1;
+      margin-bottom: 0.8rem;
+      user-select: none;
+    }
+    .panel-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+    .panel-body {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+    .panel-meta {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .panel-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--border-strong);
+      color: var(--muted);
+    }
  
-    /* ── PARTNERSHIPS ── */
-    #partnerships { background: var(--parchment); max-width: 100%; padding: 7rem 5rem; }
-    #partnerships .inner { max-width: 1300px; margin: 0 auto; }
+    /* PARTNERSHIPS */
+    #partnerships { background: var(--parchment); }
  
     .partners-grid {
       display: grid;
@@ -521,7 +415,6 @@
       border: 1px solid var(--border);
       margin-bottom: 4rem;
     }
- 
     .partner-card {
       background: var(--parchment);
       padding: 2rem 1.5rem;
@@ -530,17 +423,19 @@
       gap: 0.5rem;
       transition: background 0.2s;
     }
- 
     .partner-card:hover { background: var(--sand); }
- 
+    .partner-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--rust);
+      margin-bottom: 0.5rem;
+    }
     .partner-name {
       font-family: 'Syne', sans-serif;
       font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: 0.04em;
-      color: var(--ink);
     }
- 
     .partner-type {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -549,15 +444,6 @@
       color: var(--muted);
     }
  
-    .partner-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--rust);
-      margin-bottom: 0.5rem;
-    }
- 
-    /* CTA */
     .cta-block {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -567,22 +453,14 @@
       border: 1px solid var(--border-strong);
       background: var(--sand);
     }
- 
     .cta-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 2rem;
       font-weight: 300;
       line-height: 1.2;
     }
- 
     .cta-title em { font-style: italic; color: var(--rust); }
- 
-    .cta-sub {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-top: 0.5rem;
-    }
- 
+    .cta-sub { font-size: 0.95rem; color: var(--muted); margin-top: 0.5rem; }
     .btn-primary {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
@@ -598,10 +476,8 @@
       display: inline-block;
       white-space: nowrap;
     }
- 
     .btn-primary:hover { background: var(--rust-light); }
  
-    /* ── FOOTER ── */
     footer {
       padding: 2rem 5rem;
       border-top: 1px solid var(--border);
@@ -609,7 +485,6 @@
       align-items: center;
       justify-content: space-between;
     }
- 
     .footer-logo {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -618,7 +493,6 @@
       text-transform: uppercase;
       color: var(--rust);
     }
- 
     .footer-note {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
@@ -626,38 +500,30 @@
       color: var(--muted);
     }
  
-    /* ── SCROLL REVEAL ── */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
  
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
- 
-    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 70px; }
       .hero-text { padding: 3rem 1.5rem; }
       .hero-visual { display: none; }
-      section { padding: 4rem 1.5rem; }
+      .section-inner { padding: 4rem 1.5rem; }
       .timeline-panel.open { grid-template-columns: 1fr; }
-      .panel-image { min-height: 180px; }
+      .panel-image-placeholder { min-height: 160px; }
       .section-count { display: none; }
       .cta-block { grid-template-columns: 1fr; gap: 1.5rem; }
       footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
-      #partnerships { padding: 4rem 1.5rem; }
     }
   </style>
 </head>
 <body>
  
-  <!-- NAV -->
   <nav>
     <span class="nav-logo">AGPHI</span>
     <ul class="nav-links">
@@ -667,7 +533,7 @@
     </ul>
   </nav>
  
-  <!-- HERO -->
+  <!-- HERO / WHAT IS MYCETOMA -->
   <div class="hero" id="what">
     <div class="hero-text">
       <div class="hero-eyebrow">Global Health Initiative</div>
@@ -709,47 +575,48 @@
  
   <!-- TIMELINE -->
   <section id="timeline">
-    <div class="section-header">
-      <div>
-        <div class="section-label">02 — Our Work</div>
-        <h2 class="section-title">A Decade of<br /><em>Engagement</em></h2>
-      </div>
-      <span class="section-count">02</span>
-    </div>
- 
-    <p class="timeline-intro reveal">
-      From early awareness efforts to active research partnerships, AGPHI has built a sustained presence in mycetoma advocacy, education, and intervention across a decade of work. Click any year to explore key milestones.
-    </p>
- 
-    <div class="timeline-track reveal">
-      <div class="timeline-years" id="timelineYears">
-        <!-- Populated by JS -->
-      </div>
-    </div>
- 
-    <div class="panel-wrapper">
-      <div class="timeline-panel" id="timelinePanel">
-        <div class="panel-image">
-          <div class="panel-image-placeholder"><span>Project Image</span></div>
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-label">02 — Our Work</div>
+          <h2 class="section-title">A Decade of<br /><em>Engagement</em></h2>
         </div>
-        <div class="panel-content">
-          <div>
-            <div class="panel-year-tag" id="panelYear">2018</div>
-            <h3 class="panel-title" id="panelTitle">Project Title</h3>
-            <p class="panel-body" id="panelBody">Project description goes here.</p>
+        <span class="section-count">02</span>
+      </div>
+ 
+      <p class="timeline-intro reveal">
+        From early awareness efforts to active research partnerships, AGPHI has built a sustained presence in mycetoma advocacy, education, and intervention across a decade of work. Click any year to explore key milestones.
+      </p>
+ 
+      <div class="timeline-track reveal">
+        <div class="timeline-line"></div>
+        <div class="timeline-years" id="timelineYears"></div>
+      </div>
+ 
+      <div class="panel-wrapper">
+        <div class="timeline-panel" id="timelinePanel">
+          <div class="panel-image-placeholder">
+            <span>Project Image</span>
           </div>
-          <div class="panel-meta" id="panelMeta"></div>
+          <div class="panel-content">
+            <button class="panel-close" onclick="closePanel()">✕ Close</button>
+            <div>
+              <div class="panel-year-tag" id="panelYear"></div>
+              <h3 class="panel-title" id="panelTitle"></h3>
+              <p class="panel-body" id="panelBody"></p>
+            </div>
+            <div class="panel-meta" id="panelMeta"></div>
+          </div>
         </div>
       </div>
-      <button class="panel-close" id="panelClose" style="display:none;" onclick="closePanel()">✕ Close</button>
     </div>
   </section>
  
   <div class="full-divider"></div>
  
   <!-- PARTNERSHIPS -->
-  <div id="partnerships">
-    <div class="inner">
+  <section id="partnerships">
+    <div class="section-inner">
       <div class="section-header reveal">
         <div>
           <div class="section-label">03 — Collaborators</div>
@@ -758,72 +625,36 @@
         <span class="section-count">03</span>
       </div>
  
-      <div class="partners-grid reveal">
-        <!-- Populated by JS -->
-      </div>
+      <div class="partners-grid reveal"></div>
  
       <div class="cta-block reveal">
         <div>
           <div class="cta-title">Interested in working<br /><em>with us?</em></div>
           <p class="cta-sub">We welcome partnerships with researchers, clinicians, policymakers, and community organizations committed to addressing neglected tropical diseases.</p>
         </div>
-        <a href="/cdn-cgi/l/email-protection#4e2f293e26270e20373b602b2a3b" class="btn-primary">Get in Touch</a>
+        <a href="mailto:agphi@nyu.edu" class="btn-primary">Get in Touch</a>
       </div>
     </div>
-  </div>
+  </section>
  
-  <!-- FOOTER -->
   <footer>
     <span class="footer-logo">AGPHI × Mycetoma</span>
     <span class="footer-note">NYU School of Global Public Health — <span id="fyear"></span></span>
   </footer>
  
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // ── DATA (placeholder — replace with real content) ──
+  <script>
     const timelineData = {
-      2014: {
-        title: "Initial Awareness Campaign",
-        body: "AGPHI's first formal engagement with mycetoma as a neglected tropical disease, laying the groundwork for subsequent research and advocacy efforts in partnership with regional health authorities.",
-        tags: ["Advocacy", "Awareness", "NTD"],
-      },
+      2014: { title: "Initial Awareness Campaign", body: "AGPHI's first formal engagement with mycetoma as a neglected tropical disease, laying the groundwork for subsequent research and advocacy efforts in partnership with regional health authorities.", tags: ["Advocacy", "Awareness", "NTD"] },
       2015: null,
-      2016: {
-        title: "East Africa Field Reconnaissance",
-        body: "A scoping visit to key endemic regions to assess community burden, existing diagnostic capacity, and identify potential research partners for longer-term engagement.",
-        tags: ["Field Research", "East Africa", "Scoping"],
-      },
+      2016: { title: "East Africa Field Reconnaissance", body: "A scoping visit to key endemic regions to assess community burden, existing diagnostic capacity, and identify potential research partners for longer-term engagement.", tags: ["Field Research", "East Africa", "Scoping"] },
       2017: null,
-      2018: {
-        title: "Community Health Worker Training Pilot",
-        body: "Piloted a structured CHW training module on early mycetoma recognition in collaboration with local health ministries, reaching over 200 frontline workers across two regions.",
-        tags: ["CHW", "Training", "Capacity Building"],
-      },
-      2019: {
-        title: "Research Partnership — Khartoum",
-        body: "Formalized a research collaboration with the Mycetoma Research Centre in Khartoum, Sudan, the world's foremost institution on mycetoma, enabling joint data collection and publications.",
-        tags: ["Sudan", "Partnership", "Research"],
-      },
+      2018: { title: "Community Health Worker Training Pilot", body: "Piloted a structured CHW training module on early mycetoma recognition in collaboration with local health ministries, reaching over 200 frontline workers across two regions.", tags: ["CHW", "Training", "Capacity Building"] },
+      2019: { title: "Research Partnership — Khartoum", body: "Formalized a research collaboration with the Mycetoma Research Centre in Khartoum, Sudan, the world's foremost institution on mycetoma, enabling joint data collection and publications.", tags: ["Sudan", "Partnership", "Research"] },
       2020: null,
-      2021: {
-        title: "WHO NTD Roadmap Alignment",
-        body: "Aligned AGPHI's mycetoma programming with the WHO 2021–2030 NTD Roadmap targets, contributing to the global policy dialogue and co-authoring a position brief.",
-        tags: ["Policy", "WHO", "NTD Roadmap"],
-      },
-      2022: {
-        title: "Panel — Global NTD Summit",
-        body: "AGPHI represented at the Global NTD Summit, presenting findings from field work and advocating for increased diagnostic resources in endemic sub-Saharan communities.",
-        tags: ["Conference", "Advocacy", "Summit"],
-      },
-      2023: {
-        title: "Diagnostic Access Initiative",
-        body: "Launched a targeted initiative addressing the diagnostic gap in rural endemic communities, partnering with local laboratories to expand access to fungal culture and PCR testing.",
-        tags: ["Diagnostics", "Access", "Lab Capacity"],
-      },
-      2024: {
-        title: "10-Year Retrospective & Strategic Review",
-        body: "A formal review of a decade of mycetoma-related work, synthesizing lessons learned, impact metrics, and setting strategic priorities for the next phase of programming.",
-        tags: ["Strategy", "Review", "Impact"],
-      },
+      2021: { title: "WHO NTD Roadmap Alignment", body: "Aligned AGPHI's mycetoma programming with the WHO 2021–2030 NTD Roadmap targets, contributing to the global policy dialogue and co-authoring a position brief.", tags: ["Policy", "WHO", "NTD Roadmap"] },
+      2022: { title: "Panel — Global NTD Summit", body: "AGPHI represented at the Global NTD Summit, presenting findings from field work and advocating for increased diagnostic resources in endemic sub-Saharan communities.", tags: ["Conference", "Advocacy", "Summit"] },
+      2023: { title: "Diagnostic Access Initiative", body: "Launched a targeted initiative addressing the diagnostic gap in rural endemic communities, partnering with local laboratories to expand access to fungal culture and PCR testing.", tags: ["Diagnostics", "Access", "Lab Capacity"] },
+      2024: { title: "10-Year Retrospective & Strategic Review", body: "A formal review of a decade of mycetoma-related work, synthesizing lessons learned, impact metrics, and setting strategic priorities for the next phase of programming.", tags: ["Strategy", "Review", "Impact"] },
     };
  
     const partnersData = [
@@ -835,78 +666,57 @@
       { name: "Placeholder Partner", type: "TBD", loc: "—" },
     ];
  
-    // ── BUILD TIMELINE ──
-    const yearsContainer = document.getElementById('timelineYears');
-    const years = Object.keys(timelineData).map(Number).sort();
- 
-    years.forEach(yr => {
+    // Build timeline
+    const container = document.getElementById('timelineYears');
+    Object.keys(timelineData).map(Number).sort().forEach(yr => {
       const hasContent = timelineData[yr] !== null;
       const node = document.createElement('div');
       node.className = 'year-node' + (hasContent ? ' year-has-content' : '');
-      node.dataset.year = yr;
-      node.innerHTML = `
-        <div class="year-dot"></div>
-        <span class="year-label">${yr}</span>
-      `;
-      if (hasContent) {
-        node.addEventListener('click', () => openPanel(yr, node));
-      }
-      yearsContainer.appendChild(node);
+      node.innerHTML = `<div class="year-dot"></div><span class="year-label">${yr}</span>`;
+      if (hasContent) node.addEventListener('click', () => openPanel(yr, node));
+      container.appendChild(node);
     });
  
-    // ── BUILD PARTNERS ──
+    // Build partners
     const grid = document.querySelector('.partners-grid');
     partnersData.forEach(p => {
       const card = document.createElement('div');
       card.className = 'partner-card';
-      card.innerHTML = `
-        <div class="partner-dot"></div>
-        <div class="partner-name">${p.name}</div>
-        <div class="partner-type">${p.type}</div>
-        <div class="partner-type" style="opacity:0.6">${p.loc}</div>
-      `;
+      card.innerHTML = `<div class="partner-dot"></div><div class="partner-name">${p.name}</div><div class="partner-type">${p.type}</div><div class="partner-type" style="opacity:0.6">${p.loc}</div>`;
       grid.appendChild(card);
     });
  
-    // ── PANEL ──
+    // Panel
     let activeNode = null;
- 
     function openPanel(year, node) {
       const data = timelineData[year];
       if (!data) return;
- 
-      // Toggle
       if (activeNode === node) { closePanel(); return; }
- 
       document.querySelectorAll('.year-node').forEach(n => n.classList.remove('active'));
       node.classList.add('active');
       activeNode = node;
- 
       document.getElementById('panelYear').textContent = year;
       document.getElementById('panelTitle').textContent = data.title;
       document.getElementById('panelBody').textContent = data.body;
- 
-      const meta = document.getElementById('panelMeta');
-      meta.innerHTML = data.tags.map(t => `<span class="panel-tag">${t}</span>`).join('');
- 
+      document.getElementById('panelMeta').innerHTML = data.tags.map(t => `<span class="panel-tag">${t}</span>`).join('');
       const panel = document.getElementById('timelinePanel');
       panel.classList.remove('open');
-      void panel.offsetWidth; // reflow for re-animation
+      void panel.offsetWidth;
       panel.classList.add('open');
- 
-      document.getElementById('panelClose').style.display = 'block';
       setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
     }
- 
     function closePanel() {
       document.getElementById('timelinePanel').classList.remove('open');
-      document.getElementById('panelClose').style.display = 'none';
       if (activeNode) { activeNode.classList.remove('active'); activeNode = null; }
     }
  
-    // ── SCROLL REVEAL ──
+    // Scroll reveal
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
  
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(e
+    document.getElementById('fyear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
